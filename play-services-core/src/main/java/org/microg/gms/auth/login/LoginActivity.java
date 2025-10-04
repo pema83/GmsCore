@@ -307,6 +307,7 @@ public class LoginActivity extends AssistantActivity {
         String cookies = CookieManager.getInstance().getCookie(programmaticAuth ? PROGRAMMATIC_AUTH_URL : EMBEDDED_SETUP_URL);
         String oAuthToken = "";
         String userId = "";
+        String[] temp = cookies.split(";");
         for (String ar1 : temp) {
             String[] temp1 = ar1.split("=");
             if (ar1.trim().startsWith(COOKIE_OAUTH_TOKEN + "=")) {
