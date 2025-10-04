@@ -52,4 +52,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: 'MicroG'
-          path: play-services-core/build/outputs/apk/debug/play-services-core-debug.apk
+          path: play-services-core/
