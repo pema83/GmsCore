@@ -52,4 +52,14 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: 'MicroG'
-          path: '*.apk'
+          path: '*/com.google.android.gms-250932000.apk'
+      - name: Upload to Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: 'MicroG'
+          path: '*/org.microg.gms-250932000-user.apk'
+      - name: Upload to Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: 'MicroG'
+          path: 'org.microg.gms-250932000-user.apk'
